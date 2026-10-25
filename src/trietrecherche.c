@@ -92,6 +92,7 @@ int rechercherT3C(const char *cheminTable)
 	return 0;
 }
 
+//les 3 foncxtions qui suivent servent a classer le fichier avant de faire la recherche
 void swap_entree(entree *a, entree *b)
 {
 	entree tmp = *a;
@@ -126,6 +127,7 @@ void quicksort(entree *table, int bas, int haut, int hash_len)
 	}
 }
 
+//recherche dichotomique car fichier classé en amont
 int recherche_dicho(entree *table, int taille, const unsigned char *cible, int hash_len)
 {
 	int gauche = 0;

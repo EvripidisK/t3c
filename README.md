@@ -6,6 +6,12 @@ Deux modes : **G** (générer une table) et **L** (rechercher des chaînes depui
 
 ## Prérequis & compilation
 
+**Sans Docker** (Debian/Ubuntu)
+```bash
+sudo apt-get install build-essential libssl-dev
+make
+```
+
 **Avec Docker**
 ```bash
 docker build -t t3c .
@@ -61,6 +67,12 @@ echo "<hash>" | docker run --rm -i -v $(pwd):/data t3c L -t /data/table.t3c
 echo "5f4dcc3b5aa765d61d8327deb882cf99" | ./t3c L -t table.t3c
 # -> password
 ```
+
+---
+
+## Limitations connues
+
+- Les caractères non-ASCII (accents, etc.) et les lignes de plus de 1024 caractères sont ignorés, avec un avertissement sur `stderr`.
 
 ---
 

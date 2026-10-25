@@ -6,7 +6,7 @@
 #include "trietrecherche.h"
 #include <ctype.h>
 
-/* Variables utilisées pour stocker les valeurs des options */
+// Variables utilisées pour stocker les valeurs des options 
 const char *cheminCommande = NULL;
 const char *cheminOption = NULL;
 const char *choixAlgo = "MD5";
