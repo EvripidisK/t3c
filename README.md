@@ -6,12 +6,6 @@ Deux modes : **G** (générer une table) et **L** (rechercher des chaînes depui
 
 ## Prérequis & compilation
 
-**Sans Docker**
-```bash
-sudo apt-get install gcc make libssl-dev
-make
-```
-
 **Avec Docker**
 ```bash
 docker build -t t3c .
